@@ -5,12 +5,13 @@ const ComponentModel = require('./models/Components')
 
 const app = express()
 app.use(cors({
-    origin: ["http://localhost:5173", "http://localhost:4173", "https://api5-frontend.onrender.com"]
+    origin: ["http://localhost:5173", "http://localhost:4173",
+     "https://api5-frontend.onrender.com"]
 }))
 
 app.use(express.json())
 
-mongoose.connect('mongodb+srv://whynot:whynotishe@cluster0.qk3ma4g.mongodb.net/api5?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://Nikita:qazwsxedccool1@cluster0.yhc9bmf.mongodb.net/?retryWrites=true&w=majority')
 
 app.get('/', (req, res) => {
     ComponentModel.find({})
