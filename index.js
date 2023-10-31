@@ -6,7 +6,7 @@ const ComponentModel = require('./models/Components')
 const app = express()
 app.use(cors({
     origin: ["http://localhost:5173", "http://localhost:4173",
-     "https://pr5apiclient.onrender.com"]
+     "https://pr5front-40he.onrender.com"]
 }))
 
 app.use(express.json())
